@@ -90,9 +90,6 @@ pip install numpy scipy pandas matplotlib seaborn pymc arviz tqdm
 -   Incorporates ML discrimination power
 -   More sensitive in theory, variance-dominated in practice
 
-**Pros:** Uses full event information\
-**Cons:** Sensitive to limited statistics
-
 ------------------------------------------------------------------------
 
 ### Unbinned Maximum Likelihood (MLE)
@@ -100,9 +97,6 @@ pip install numpy scipy pandas matplotlib seaborn pymc arviz tqdm
 -   KDE-based continuous likelihood
 -   Signal and background PDFs from calibration detectors
 -   Maximizes likelihood to extract best-fit signal rate
-
-**Pros:** Avoids binning artifacts\
-**Cons:** KDE smoothing can bias with small samples
 
 ------------------------------------------------------------------------
 
