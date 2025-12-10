@@ -16,15 +16,15 @@ limits.
 
 The notebook expects four CSV files corresponding to four detectors:
 
-  Detector          File                   Columns
-  ----------------- ---------------------- ------------------------
-  Detector A        `DetectorA.csv`        EventID, Score, Energy
-  Detector B        `DetectorB.csv`        EventID, Score, Energy
-  Detector C        `DetectorC.csv`        EventID, Score, Energy
-  Target Detector   `DetectorTarget.csv`   EventID, Score, Energy
+| Detector | File | Columns |
+|---------|------|---------|
+| Detector A | `DetectorA.csv` | EventID, Score, Energy |
+| Detector B | `DetectorB.csv` | EventID, Score, Energy |
+| Detector C | `DetectorC.csv` | EventID, Score, Energy |
+| Target Detector | `DetectorTarget.csv` | EventID, Score, Energy |
 
-Each dataset contains calibrated event-level energy measurements and
-ML-based discrimination scores.
+Each dataset contains calibrated event-level energy measurements and ML-based discrimination scores.
+
 
 ------------------------------------------------------------------------
 
@@ -102,11 +102,12 @@ pip install numpy scipy pandas matplotlib seaborn pymc arviz tqdm
 
 ## Results Summary
 
-  Method         Signal Estimate θₙ   90% CL Upper Limit   Role
-  -------------- -------------------- -------------------- ----------------------
-  1D Bayesian    7.74                 14.81                Primary result
-  2D Bayesian    --                   27.77                Advanced cross-check
-  Unbinned MLE   8.34                 --                   Robustness test
+| Method       | Signal Estimate θₙ | 90% CL Upper Limit | Role                 |
+| ------------ | ------------------ | ------------------ | -------------------- |
+| 1D Bayesian  | 7.74               | 14.81              | Primary result       |
+| 2D Bayesian  | –                  | 27.77              | Advanced cross-check |
+| Unbinned MLE | 8.34               | –                  | Robustness test      |
+
 
 No statistically significant excess compatible with 0νββ was observed.
 
